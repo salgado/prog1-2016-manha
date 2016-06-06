@@ -1,12 +1,9 @@
 #include <stdio.h>
 
-int main()
+void triangulo(int fim)
 {
-    int fim, ini=1, espaco=0;
+    int ini=1, espaco=0;
     int j, i;
-    
-    printf("\nEntre com numero impar:");
-    scanf("%d", &fim);
     
     do
     {
@@ -22,6 +19,18 @@ int main()
         ini++;
         fim--;
     }while(ini<=fim);
+    
+}
+
+int main()
+{
+    int fim;
+    
+    printf("\nEntre com numero impar:");
+    scanf("%d", &fim);
+    
+    triangulo(fim);
+    triangulo(fim/2);
     
     return 0;
 }
